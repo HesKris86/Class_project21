@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 
+#with open("doc.html") as fp:
+ # soup = BeautifulSoup(fp, "html.parser")
+
 
 
 '''
@@ -162,17 +165,17 @@ print(user_00)
 
 '''
 
+### this is the main source that I will be using. 
+#https://www.careercenteroffices.com/brooklyn-ny/
 
-'''
-
-url = 'https://www.careercenteroffices.com/center/1081/brooklyn-workforce-1-career-center/'
+url = 'https://www.careercenteroffices.com/brooklyn-ny/' 
 myobj = {'rollout_tracking': ''}
 
 x = requests.post(url, data = myobj)
 
 print(x.text)
 # please ignore the aformentioned.
-'''
+
 import time
 import random
 
@@ -198,7 +201,21 @@ name = input('What is your name? ')
 print(f'thanks {name}. We are ready to begin')
 
 time.sleep(5)
-print('start of questions')
+print(f'{name}, this is one of the first steps to rebuilding the life you want to live. Here at, TEAM NAME, we\npartner with...')
+
+team_mate =  html/body/footer/div[1]/div[2]/p style='margin-top:2020px:'
+
+print(team_mate)
+### Joseph this is where I am having my error. When I am able to resolve this I will be able to complete my 10 questions and post to repo prior to monday. 
+
+
+
+
+
+
+
+
+
 "Are you on any form of supervised probation? "
 
 "When was you last medical evaluation? "
