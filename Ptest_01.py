@@ -284,4 +284,178 @@ writer.writerow(tup1)
 f.close()
 '''
 
-#test line--Shawn's add
+#area for questions
+#question 1 is probation
+#q 2-4 are for jobs
+#q 5-7 are healthcare
+#q 8-10 are housing
+#easch should have options 1,2,3 that can be amend by each of us at a later time.
+
+import time
+import random
+
+trs_reply = ['Thank you for your honesty.' 'One moment please', 'Great answer']
+
+#print(random.choice(trs_reply))
+hey_there = "Hello and welcome."
+print(hey_there.center(40, '-'))
+time.sleep(2)
+print("INPUT text of our group")
+time.sleep(2)
+print("Thank you for taking the time to complete the survey.")
+time.sleep(2)
+
+
+user1= input("What is your name? ")
+#name
+#age
+#how long release...months
+
+
+#variable = {stored data}
+
+time.sleep(2)
+
+greeting_here = "One moment please"
+print(greeting_here.center(30,'*'))
+
+time.sleep(1)
+print('Let us begin.')
+time.sleep(1)
+input(f'Thanks {user1}. I can not wait to get started.\nPlease press enter.')
+time.sleep(2)
+
+print('Today we are going to take a survey to best assist you with our resources.')
+time.sleep(1)
+print('This is merely a starting step.')
+print("please use the letter to match your desired answer.")
+my_list = ['a: yes', 'b: no', 'c: it varies']
+print(my_list)
+q_1 = input(' Question: Are you on any type of probation? ')
+
+if q_1 == "a":
+    print("please provide the name of your PO ")
+elif q_1 == "b":
+    print('good')
+else:
+    print("ok. no worries")
+print(random.choice(trs_reply))
+#trs_reply = []
+for reply in trs_reply:
+    if reply == trs_reply[1]:
+        print('thanks')
+time.sleep(2)
+random.choice(trs_reply)
+print(my_list)
+q_2 = input('Question: Are you currently employed? ')
+if q_2 == "a":
+    print("option 1")
+elif q_2 == "b":
+    print('option 2')
+else:
+    print("option 3")
+print(random.choice(trs_reply))
+for reply in trs_reply:
+    if reply == trs_reply[1]:
+        print('thank you.')
+time.sleep(2)
+print(my_list)
+q_3 = input('Question: what is your highest level of completed education? ')
+if q_3 == "a":
+    print("option 1")
+elif q_3 == "b":
+    print('option 2.')
+else:
+    print("option 3.")
+print(random.choice(trs_reply))
+for reply in trs_reply:
+    if reply == trs_reply[0]:
+        print('thanks')
+time.sleep(2)
+print(my_list)
+q_4 = input('Question: 4 Would you like to attend school and be given a counselor? ')
+if q_4 == "a":
+    print("option 1")
+elif q_4 == "b":
+    print('option 2')
+else:
+    print("option 3.")
+print(random.choice(trs_reply))
+for reply in trs_reply:
+    if reply == trs_reply[1]:
+        print('thanks.')
+time.sleep(2)
+print(my_list)
+
+q_5 = input('Question: 5 Do you have health care? ')
+if q_5 == "a":
+    print("option 1. ")
+elif 5 == "b":
+    print('option 2')
+else:
+    print("option 3")
+print(random.choice(trs_reply))
+for reply in trs_reply:
+    if reply == trs_reply[1]:
+        print('thanks.')
+time.sleep(2)
+print(my_list)
+q_6 = input("Question: 6 When was you last physical? ")
+if q_6 == "a":
+    print('option 1')
+elif q_6 == "b":
+    print('optino 2.')
+else:
+    print("option 3")
+print(random.choice(trs_reply))
+for reply in trs_reply:
+    if reply == trs_reply[0]:
+        print('thanks')
+time.sleep(2)
+print(my_list)
+q_7 = input('Question: 7 Do you have any high risk behavior? ')
+if q_7 == "a":
+    print("option 1 ")
+elif q_7 == "b":
+    print('option 2')
+else:
+    print("option 3")
+print(random.choice(trs_reply))
+time.sleep(2)
+print(my_list)
+q_8 = input('Question: 8 Do you have lodging currently?  ')
+if q_8 == "a":
+    print("option 1")
+elif q_8 == "b":
+    print('option 2.')
+else:
+    print("option 3.")
+print(random.choice(trs_reply))
+time.sleep(2)
+print(my_list)
+q_9 = input('Question: 9 How long are you able to live there? ')
+if q_9 == "a":
+    print("option 1")
+elif q_9 == "b":
+    print('option 2')
+else:
+    print("option 3")
+print(random.choice(trs_reply))
+for reply in trs_reply:
+    if reply == trs_reply[1]:
+        print('thanks')
+time.sleep(2)
+print(my_list)
+q_10 = input('Question: 10 Would you like to have your own home within a year? ')
+if q_10 == "a":
+    print("Great.")
+elif q_10 == "b":
+    print('Great.')
+else:
+    print("Get lost then")
+for reply in trs_reply:
+    if reply == trs_reply[0]:
+        print('thanks')
+time.sleep(2)
+print("Good bye. Again, thank you for parterning with trs. I hope you have an amazing day.")
+
