@@ -291,6 +291,7 @@ f.close()
 #q 8-10 are housing
 #easch should have options 1,2,3 that can be amend by each of us at a later time.
 
+#this is new info
 import time
 import random
 
